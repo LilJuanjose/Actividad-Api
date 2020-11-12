@@ -11,8 +11,8 @@
 
 <body>
     <div class="container-fluid">
-        <!--NAVBAR-->
-        <div class="row d-flex bg-primary text-white" id="row-image">
+
+        <div class="row d-flex bg-success text-white" id="row-image">
             <a class="col-11" href="./">
                 Menú
             </a>
@@ -20,7 +20,7 @@
                 <img src="" href="https://www.flaticon.es/"> CARRITO 
             </a>
         </div>
-        <!--CONTAINER-->
+
         <div class="mt-5 container d-flex justify-content-around" id="row">
             <div class="col-2 row text-uppercase">
                 <div class="mt-5 p-3">
@@ -39,8 +39,8 @@
                         </div>
                         <div class="d-block">
                             <div class="">
-                                <span class="row text-uppercase text-dark justify-content-center">ultra ball</span>
-                                <span class="row text-uppercase text-dark justify-content-center">$ 55000 PKD</span>
+                                <a class="row text-uppercase text-dark justify-content-center" href="./compra">Empanada de Carne</a>
+                                <span class="row text-uppercase text-dark justify-content-center">2000 $ c/u</span>
                             </div>
                         </div>
                     </div>
@@ -48,16 +48,16 @@
                         <div class="p-2" id="producto2">
                         </div>
                         <div class="">
-                            <a class="row text-uppercase text-dark justify-content-center" href="./compra">master ball</a>
-                            <span class="row text-uppercase text-dark justify-content-center">$ 100000 PKD</span>
+                            <a class="row text-uppercase text-dark justify-content-center" >Empanada Argentina</a>
+                            <span class="row text-uppercase text-dark justify-content-center">3000 $ c/u</span>
                         </div>
                     </div>
                     <div class="mt-5 align-self-start">
                         <div class="p-2" id="producto3">
                         </div>
                         <div class="">
-                            <span class="row text-uppercase text-dark justify-content-center">ocaso ball</span>
-                            <span class="row text-uppercase text-dark justify-content-center">$ 28000 PKD</span>
+                            <span class="row text-uppercase text-dark justify-content-center">Empanada Mexicana</span>
+                            <span class="row text-uppercase text-dark justify-content-center">6000 $ c/u</span>
                         </div>
                     </div>
                 </div>
@@ -65,46 +65,44 @@
                     <div class="p-2" id="product1">
                     </div>
                     <div class="">
-                        <span class="row text-uppercase text-dark justify-content-center">amor ball</span>
-                        <span class="row text-uppercase text-dark justify-content-center">$ 38000 PKD</span>
+                        <span class="row text-uppercase text-dark justify-content-center">Empanadas a la Europa</span>
+                        <span class="row text-uppercase text-dark justify-content-center">8500 $ c/u</span>
                     </div>
                 </div>
                 <div class="mt-5 align-self-start">
                     <div class="p-2" id="product2">
                     </div>
                     <div class="">
-                        <span class="row text-uppercase text-dark justify-content-center">honor ball</span>
-                        <span class="row text-uppercase text-dark justify-content-center">$ 30000 PKD</span>
+                        <span class="row text-uppercase text-dark justify-content-center">Empanadas Chilenas</span>
+                        <span class="row text-uppercase text-dark justify-content-center">4500 $ c/u</span>
                     </div>
                 </div>
                 <div class="mt-5 align-self-start">
                     <div class="p-2" id="product3">
                     </div>
                     <div class="">
-                        <span class="row text-uppercase text-dark justify-content-center">sana ball</span>
-                        <span class="row text-uppercase text-dark justify-content-center">$ 35000 PKD</span>
+                        <span class="row text-uppercase text-dark justify-content-center">Empanada Paisa</span>
+                        <span class="row text-uppercase text-dark justify-content-center">5000 $ c/u</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <!--FOOTER-->
-    <div class="row fixed-bottom mt-5 d-flex justify-content-center">
-        <div id="footer" class="bg-primary footer-copyright text-center text-white align-self-end py-3">© 2020 Pipe
-            [INDUSTRIAS-CONTENT-CENTER-MDBOOSTRAP]
-                                      <a href="/api">
-          ¡MIRA EL API DE CARRITO!
+        <div class="row footer mt-5 d-flex justify-content-center">
+            <div id="footer" class="bg-success footer-copyright text-center text-white align-self-end py-3">García Juan José /
+                                          <a href="/api">
+          Api de la web!
           </a>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 <style>
     .container-fluid {
         background-color: rgba(0, 0, 0, 0.137);
         width: 100vmax;
-        height: 100vh;
+        height: 120vh;
         text-align: center;
     }
 
@@ -123,13 +121,8 @@
         transition: all .3s;
     }
 
-    #cat1:hover {
-        transform: translateX(-.3em);
-        transform-origin: 0 0;
-    }
-
     #cat1:focus {
-        color: red;
+        color: blue;
         outline: none;
         box-shadow: none;
     }
@@ -137,103 +130,78 @@
     #producto1 {
         width: 200px;
         height: 200px;
-        background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/016cd9a5-7bee-44c1-b903-9a4867cfd9ea/d86ar8g-b61d3613-fb1b-4e54-b0b5-272ad6cb7bbd.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMDE2Y2Q5YTUtN2JlZS00NGMxLWI5MDMtOWE0ODY3Y2ZkOWVhXC9kODZhcjhnLWI2MWQzNjEzLWZiMWItNGU1NC1iMGI1LTI3MmFkNmNiN2JiZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.NsFjTw9C4R1aUwIOZ74SGiTzYC7PuwXUkKPQqpsIAoM');
+        background-image: url('https://t1.rg.ltmcdn.com/es/images/5/8/4/img_empanadas_de_carne_cortada_a_cuchillo_7485_600.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid black;
+        border: 2px solid yellow;
         border-radius: 5px;
         transition: all .3s;
-    }
-
-    #producto1:hover {
-        transform: scale3d(1.03, 1.03, 1.03);
     }
 
     #producto2 {
         width: 200px;
         height: 200px;
-        background-image: url('https://pm1.narvii.com/6334/f9a3d7071ec71109b5d10ed4e5e30f861b2d0c1e_hq.jpg');
+        background-image: url('https://recetasde.info/wp-content/uploads/2019/01/1t1bxm43v4e3_2bWSDH2U1iuQ2SoYUawq4o_empanadas-de-carne-fritas_landscapeThumbnail_es-e1553993424999.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid rebeccapurple;
+        border: 2px solid yellow;
         border-radius: 5px;
-        background-color: black;
         transition: all .3s;
-    }
-
-    #producto2:hover {
-        transform: skew(-5deg);
     }
 
     #producto3 {
         width: 200px;
         height: 200px;
-        background-image: url('https://pm1.narvii.com/6334/e37fb43f99bb1595791725dfe88f70ef6a24314d_hq.jpg');
+        background-image: url('https://www.mexicoenmicocina.com/wp-content/uploads/2018/03/empanadas-de-maiz-fritas-rellenas-de-queso-715x1024.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid green;
+        border: 2px solid yellow;
         border-radius: 5px;
         transition: all .3s;
     }
 
     /*        transform: matrix(S, SX, SY, S, TX, TY);;*/
     /*MATRIX SE COMPONE DE: SKEW(X,Y) TRANSFORM(X,Y,Z) SCALE(X,Y)*/
-    #producto3:hover {
-        transform: scale3d(1.03, 1.03, 1.03);
-    }
 
     #product1 {
         width: 200px;
         height: 200px;
-        background-image: url('https://pm1.narvii.com/6334/c729528f6f11cdcfe5ff7d380fd03d582db0cd44_hq.jpg');
+        background-image: url('https://assets.tmecosys.com/image/upload/t_web600x528/img/recipe/ras/Assets/7EBBBD3C-C2A8-4292-92BE-8504D03C1D0F/Derivates/E350B4D0-6217-456E-8778-337AA72843D6.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid palevioletred;
+        border: 2px solid yellow;
         border-radius: 5px;
         transition: all .5s;
-    }
-
-    #product1:hover {
-        transform: rotate3d(1, 1, 1, -10deg);
     }
 
     #product2 {
         width: 200px;
         height: 200px;
-        background-image: url('https://pm1.narvii.com/6226/6d993d2766a5be62fc32ff5c7e084ff9a9265283_hq.jpg');
+        background-image: url('https://querecetas.net/wp-content/uploads/2019/04/empanadas-mexicanas-fritas.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid red;
+        border: 2px solid yellow;
         border-radius: 5px;
-        background-color: whitesmoke;
         transition: all .3s;
-    }
-
-    #product2:hover {
-        transform: skew(5deg)
     }
 
     #product3 {
         width: 200px;
         height: 200px;
-        background-image: url('https://pm1.narvii.com/6334/0ea9dde1aff4d13fe61b64a7de75982f61e06612_hq.jpg');
+        background-image: url('https://www.elpais.com.co/files/article_main/uploads/2017/02/01/5891ecec84e18.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
-        border: 2px solid pink;
+        border: 2px solid yellow;
         border-radius: 5px;
         transition: all .5s;
-        background-color: white;
     }
 
-    #product3:hover {
-        transform: rotate3d(1, 1, 1, 10deg);
-    }
         a{
         color: white;
         text-decoration: none;
